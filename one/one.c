@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include "temperature.h"
-#include "temperature.h"
 
-void transformFahr2celsius(int lower, int upper, int step);
+void transformFahr2celsius(float lower, float upper, float step);
 
-void transformCelsius2Fahr(int lower, int upper, int step);
+void transformCelsius2Fahr(float lower, float upper, float step);
 
 int main(int argc, char const *argv[]) {
   // printf("Hello World!\n");
@@ -13,18 +12,18 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-void transformFahr2celsius(int lower, int upper, int step) {
-  int fahr = lower;
+void transformFahr2celsius(float lower, float upper, float step) {
+  float fahr = lower;
   while (fahr <= upper) {
-    printf("fahr is %d,celsius is %d\n", fahr, fahr2celsius(fahr));
+    printf("fahr is %.1f,celsius is %.1f\n", fahr, fahr2celsius(fahr));
     fahr += step;
   }
 }
 
-void transformCelsius2Fahr(int lower, int upper, int step) {
-  int fahr = lower;
+void transformCelsius2Fahr(float lower, float upper, float step) {
+  float fahr = lower;
   while (fahr <= upper) {
-    printf("celsius is %d,fahr is %d\n", fahr, celsius2fahr(fahr));
+    printf("celsius is %.1f,fahr is %.1f\n", fahr, celsius2fahr(fahr));
     fahr += step;
   }
 }

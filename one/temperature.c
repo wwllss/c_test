@@ -1,4 +1,4 @@
 
-int fahr2celsius(int fahr) { return (fahr - 32) * 5 / 9; }
+float fahr2celsius(float fahr) { return (fahr - 32) * 5.0 / 9.0; }
 
-int celsius2fahr(int celsius) { return celsius * 9 / 5 + 32; }
+float celsius2fahr(float celsius) { return celsius * 9.0 / 5.0 + 32; }

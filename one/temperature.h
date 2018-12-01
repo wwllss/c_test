@@ -1,8 +1,8 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-int fahr2celsius(int fahr);
+float fahr2celsius(float fahr);
 
-int celsius2fahr(int celsius);
+float celsius2fahr(float celsius);
 
 #endif
